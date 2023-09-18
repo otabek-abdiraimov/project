@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RMC</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="first-page">
+        <header>
+          <div class="first-nav">
+            <nav>
+              <div class="logo">
+                <img src="assets/Herro title.png" alt="" />
+              </div>
+              <ul>
+                <li><a href="#">THE STUDIO</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">ARCHITECTURE</a></li>
+                <li><a href="#">BLOG</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="second-nav">
+            <div class="home-image">
+              <div class="btn">CONTACT</div>
+            </div>
+          </div>
+        </header>
+        <section class="home">
+          <div class="texts">
+            <img src="assets/Group 11751.png" alt="" />
+            <p class="yellow_text">Architecture design</p>
+            <h1>
+              Professional <br />
+              Interior Design
+            </h1>
+            <p class="p_second">
+              Design for now with the awareness of yesterday and <br />
+              unknown tomorrow. Because small details make the perfect <br />
+              design. Helping you choose between good and best.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="second-page">
+      <div class="btn">Let’s work together</div>
+      <section class="services">
+        <p class="yellow_text">TOP SERVICES</p>
+        <h3>Our Specializations</h3>
+        <!-- <div class="cards">
+          <img src="assets/arrow-left-solid 1.png" alt="" />
+          <div class="card">
+            <div class="box">
+              <p>Floor plan</p>
+              <p>Tempor incident ut labore et dolore magna aliqua</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <p>Floor plan</p>
+              <p>Tempor incident ut labore et dolore magna aliqua</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <p>Floor plan</p>
+              <p>Tempor incident ut labore et dolore magna aliqua</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <p>Floor plan</p>
+              <p>Tempor incident ut labore et dolore magna aliqua</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <p>Floor plan</p>
+              <p>Tempor incident ut labore et dolore magna aliqua</p>
+            </div>
+          </div>
+          <img src="assets/arrow-right-solid 1.png 1.png" alt="" />
+        </div>
+       -->
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <p>Floor plan</p>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs";
+
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </body>
+</html>
