@@ -90,54 +90,48 @@
           <img src="assets/arrow-right-solid 1.png 1.png" alt="" />
         </div>
        -->
-        <!-- Slider main container -->
-        <div class="swiper">
-          <!-- Additional required wrapper -->
+        <div class="swiper mySwiper">
+          <img
+            class="swiper-button-prev"
+            src="assets/arrow-right-solid 1.png"
+            alt=""
+          />
+
           <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <p>Floor plan</p>
-            </div>
+            <div class="swiper-slide">Slide 1</div>
             <div class="swiper-slide">Slide 2</div>
             <div class="swiper-slide">Slide 3</div>
-            ...
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
           </div>
-          <!-- If we need pagination -->
+          <img
+            class="swiper-button-prev"
+            src="assets/arrow-left-solid 1.png"
+            alt=""
+          />
           <div class="swiper-pagination"></div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
         </div>
       </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script type="module">
-      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs";
-
-      const swiper = new Swiper(".swiper", {
-        // Optional parameters
-        direction: "horizontal",
-        loop: true,
-
-        // If we need pagination
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",
+          clickable: true,
         },
-
-        // Navigation arrows
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-
-        // And if we need scrollbar
-        scrollbar: {
-          el: ".swiper-scrollbar",
-        },
+        direction: "horizontal",
+        loop: true,
       });
     </script>
   </body>
