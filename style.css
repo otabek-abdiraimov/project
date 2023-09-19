@@ -120,9 +120,9 @@ nav ul li a {
   letter-spacing: 4.8px;
 }
 
-h1 {
+.title {
   color: #fff;
-  font-family: Larken;
+  font-family: larken;
   font-size: 84px;
   font-style: normal;
   font-weight: 400;
@@ -222,6 +222,7 @@ section h3 {
 section.about {
   padding-top: 200px;
   position: relative;
+  padding-bottom: 200px;
 }
 
 .about h1 {
@@ -284,6 +285,19 @@ section.about {
 
 .about svg {
   margin-bottom: -600px;
+  position: absolute;
+  bottom: 160px;
+  left: 40px;
+}
+
+.star {
+  position: relative;
+}
+
+.star svg {
+  position: absolute;
+  bottom: 435px;
+  left: 645px;
 }
 
 .box {
@@ -293,166 +307,108 @@ section.about {
   flex-shrink: 0;
 }
 
-/* ------------------------------Second Page------------------------------- */
-
-.home2 {
-  padding-left: 100px;
-  background-color: #161921;
-}
-
-.dib {
+.boxes {
   display: flex;
+  justify-content: end;
+  gap: 20px;
+  margin-top: -538px;
 }
 
-.page2 {
-  margin-top: 30px;
+.box2 {
+  background: #10131c;
+  width: 344px;
+  height: 536px;
+  flex-shrink: 0;
 }
 
-.page2 article {
-  color: white;
-  margin-left: 45px;
-  margin-top: -100px;
-}
+/* ----------------------Projects Section------------------------ */
 
-.page2 article span {
-  line-height: 35px;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.div {
-  width: 400px;
-  height: 450px;
-  background: #0c0e14;
-  margin-top: 85px;
-  margin-left: 60px;
-  border-radius: 10px;
-}
-.page1 {
-  width: 55%;
-  height: 700px;
-  color: rgb(109, 106, 106);
-}
-.a1 {
-  font-size: 18px;
-  font-weight: 400;
-  color: white;
-}
-.s1 {
-  font-size: 16px;
-  font-weight: 400;
-  color: #ffb076;
-}
-.page1 .c1 {
-  display: flex;
-  color: #ffb076;
-  font-size: 16px;
-  font-weight: 400;
-}
-.c1 span {
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-.c2 {
-  margin-bottom: 80px;
-}
-.page1 .c2 {
-  color: #fff;
-  font-size: 49px;
-  font-weight: 400;
-}
-table,
-th,
-td {
-  border: 0;
-  border-bottom: 1px solid #fff;
-  border-collapse: collapse;
-}
-th,
-td {
-  padding: 10px 15px;
-  text-align: center;
-}
-.c4 {
-  margin-top: 15px;
-  font-size: 16px;
-  font-weight: 400;
-  color: #ffb076;
-}
-.c3 {
-  margin-top: 35px;
-  font-size: 45px;
-  font-weight: 400;
-  color: white;
-}
-.d1 {
-  width: 1190px;
-  height: 650px;
-  background: #0c0e14;
-  margin-top: 100px;
-  border-radius: 10px;
-  margin-bottom: 40px;
-}
-.aaa {
-  color: white;
-  font-size: 28px;
-}
-.as1 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.slider {
+.top {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding-right: 30px;
 }
 
-.page-strim {
-  margin-left: -20px;
-  width: 160px;
-  height: 370px;
-  background: #0c0e14;
-  border: 1px solid white;
-  margin-top: 400px;
-}
-.page4 {
-  display: flex;
-  width: 100%;
-}
-
-.mySlider {
-  margin-top: 200px;
-}
-
-svg {
-  margin-top: 450px;
-  margin-left: 53px;
-}
-svg:first-child {
-  margin-right: 50px;
-}
-.footer {
-  display: flex;
-  gap: 130px;
-  margin-top: 100px;
-  margin-left: 150px;
-  color: white;
-}
-.footer span {
-  line-height: 30px;
-}
-span:first-child {
-  color: #ffb076;
-}
-.b5 {
+.top h2 {
   font-size: 40px;
-  font-weight: 400;
 }
-.f1 {
-  font-size: small;
-  font-weight: 700;
+
+.filter {
+  display: flex;
+  gap: 40px;
 }
-.f1:last-child {
+
+.filter a {
+  color: #abaeb7;
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  &:first-child {
+    color: #ffb076;
+  }
 }
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -200px;
+  margin-top: 100px;
+}
+
+.card {
+  margin-left: 50px;
+  width: 230px;
+  height: 400px;
+  flex-shrink: 0;
+  border: 2px solid #fff;
+  background: #10131c;
+  margin-bottom: 70px;
+}
+
+/* -------------Experience section------------------- */
+
+.experience {
+  fill: #161921;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.experience h2 {
+  color: #fff;
+  font-family: larken;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  width: 630px;
+  line-height: 70px;
+  width: 40%;
+  margin-bottom: 320px;
+  margin-left: 120px;
+}
+
+.experience .contents {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 40%;
+  margin-left: -500px;
+}
+
+.experience .content h1 {
+  color: #ffaf76;
+  font-family: larken;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 70px; /* 109.375% */
+}
+
