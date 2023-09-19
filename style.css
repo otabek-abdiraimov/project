@@ -163,6 +163,40 @@ section h3 {
   line-height: normal;
 }
 
+.text {
+  font-weight: 600;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  font-family: "Kanit";
+  font-size: 30px;
+  fill: #111;
+  text-shadow: 2px 0px #ccc;
+}
+.main {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  color: #abaeb7;
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#rotatingText {
+  animation-name: rotate-circle;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate-circle {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
 /* ------------------------Slider Section------------------------------- */
 
 .swiper {
@@ -184,6 +218,82 @@ section h3 {
   height: 484px;
   padding-bottom: 60px;
 }
+
+section.about {
+  padding-top: 200px;
+  position: relative;
+}
+
+.about h1 {
+  color: #fff;
+  font-family: larken;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  display: flex;
+  align-items: center;
+  width: 450px;
+}
+
+.paragraph p {
+  padding-left: 20px;
+}
+
+.line {
+  position: relative;
+}
+
+.line img {
+  position: absolute;
+  top: -450px;
+  left: -100px;
+  bottom: 0;
+}
+
+.satisfied {
+  width: 192px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.satisfied h1 {
+  color: #fff;
+  font-family: larken;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.satisfied p {
+  color: var(--w, #fff);
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+}
+
+.about svg {
+  margin-bottom: -600px;
+}
+
+.box {
+  background: #2d2a2a;
+  width: 408px;
+  height: 175px;
+  flex-shrink: 0;
+}
+
+/* ------------------------------Second Page------------------------------- */
 
 .home2 {
   padding-left: 100px;
